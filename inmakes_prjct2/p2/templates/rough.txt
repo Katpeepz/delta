@@ -1,0 +1,23 @@
+in index.html:
+
+<!--{% for i in movie_list %}-->
+<!--<a href="movie/{{i.id}}">{{i.name}}<br> or-->
+<!--<img  src="{{i.img.url}}" width="100" height="100">-->
+<!--<a href="{% url 'movie2:details' i.id %}">{{i.name}}<br>-->
+
+js:
+
+var:
+
+Variables declared with var are function-scoped, meaning they are only accessible within the function where they are declared.
+var variables are hoisted, which means they are moved to the top of their scope during the compilation phase.
+
+let:
+
+Variables declared with let are block-scoped, meaning they are only accessible within the block (e.g., a function, loop, or conditional statement) where they are declared.
+let variables are not hoisted in the same way as var variables.
+
+const:
+
+Variables declared with const are block-scoped like let, but they cannot be reassigned after initialization.
+const is typically used for values that should not be changed.
